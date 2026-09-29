@@ -111,7 +111,7 @@ const ProjectCard = ({ project }) => (
 
 const Projects = () => {
   return (
-   <div className="project-section">
+  <div className="project-section" id="projects">
     <div className="container">
 
     <h3 className="project-heading">
