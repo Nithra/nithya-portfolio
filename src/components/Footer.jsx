@@ -31,7 +31,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
 
-            <a href="mailto:nithyarajainfotech@gmail.com">
+            <a href="mailto:nithyar.dev@gmail.com">
               <FaEnvelope />
             </a>
           </div>

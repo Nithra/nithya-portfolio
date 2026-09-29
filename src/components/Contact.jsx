@@ -34,8 +34,8 @@ const Contact = () => {
               <FaEnvelope className="info-icon" />
               <div>
                 <h4>Email</h4>
-                <a href="mailto:nithyarajainfotech@gmail.com">
-                 nithyarajainfotech@gmail.com
+                <a href="mailto:nithyar.dev@gmail.com">
+                 nithyar.dev@gmail.com
                 </a>
               </div>
             </div>
@@ -44,8 +44,8 @@ const Contact = () => {
               <FaPhoneAlt className="info-icon" />
               <div>
                 <h4>Phone</h4>
-                <a href="tel:+918667235236">
-                  +91 8667235236
+                <a href="tel:+9345046870">
+                  +91 9345046870
                 </a>
               </div>
             </div>
