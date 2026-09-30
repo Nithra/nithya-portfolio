@@ -24,7 +24,7 @@ const Footer = () => {
          
 
             <a
-              href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+              href="https://www.linkedin.com/in/nithya-r-589b3943b/in/YOUR_LINKEDIN_USERNAME"
               target="_blank"
               rel="noreferrer"
             >

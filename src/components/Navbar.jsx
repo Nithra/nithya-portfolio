@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaEnvelope, FaLinkedinIn } from "react-icons/fa";
 import "./../../public/css/navbar.css"
 
 const Navbar = () => {
@@ -22,8 +22,8 @@ const Navbar = () => {
         </nav>
 
         <div className="nav-right">
-          <a href="#"><FaGithub /></a>
-          <a href="#"><FaLinkedinIn /></a>
+          <a href="mailto:nithyar.dev@gmail.com"><FaEnvelope /></a>
+          <a href="https://www.linkedin.com/in/nithya-r-589b3943b/"><FaLinkedinIn /></a>
 
           <button className="hire-btn">
             Hire Me

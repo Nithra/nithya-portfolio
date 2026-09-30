@@ -1,6 +1,7 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import "./../../public/css/hero.css";
+import aboutright from "./../assets/about.png";
 const Hero = () => {
   return (
     <section className="hero" id="home">
@@ -31,9 +32,9 @@ const Hero = () => {
           </div>
 
           <div className="social-icons">
-            <a href="#"><FaGithub /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaEnvelope /></a>
+            {/* <a href="#"><FaGithub /></a> */}
+           <a href="mailto:nithyar.dev@gmail.com"><FaEnvelope /></a>
+           <a href="https://www.linkedin.com/in/nithya-r-589b3943b/"><FaLinkedinIn /></a>
           </div>
 
         </div>
@@ -41,7 +42,10 @@ const Hero = () => {
         <div className="hero-image">
 
           <div className="profile-circle">
-            NR
+            <img
+                        src={aboutright}
+                        alt="Nithya Raja"
+                      />
           </div>
 
         </div>

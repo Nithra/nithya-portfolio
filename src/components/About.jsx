@@ -7,12 +7,7 @@ const About = () => {
     <section className="about" id="about">
       <div className="container about-container">
 
-        <div className="about-image">
-          <img
-            src={aboutright}
-            alt="Nithya Raja"
-          />
-        </div>
+       
 
         <div className="about-content">
 
@@ -32,6 +27,10 @@ const About = () => {
             React and Full Stack Development.
           </p>
 
+         
+
+        </div>
+ <div className="about-left">
           <div className="about-cards">
 
             <div className="card">
@@ -50,9 +49,7 @@ const About = () => {
             </div>
 
           </div>
-
         </div>
-
       </div>
     </section>
   );
