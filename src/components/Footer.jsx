@@ -1,10 +1,5 @@
 import "./../../public/css/footer.css";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaArrowUp,
-} from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -24,7 +19,7 @@ const Footer = () => {
          
 
             <a
-              href="https://www.linkedin.com/in/nithya-r-589b3943b/in/YOUR_LINKEDIN_USERNAME"
+              href="https://www.linkedin.com/in/nithya-r-589b3943b/"
               target="_blank"
               rel="noreferrer"
             >

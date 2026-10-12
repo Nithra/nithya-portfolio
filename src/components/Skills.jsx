@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -39,6 +40,58 @@ const skills = [
 ];
 
 function Skills() {
+  const [pausedRows, setPausedRows] = useState({
+    core: false,
+    tools: false,
+  });
+
+  const renderSkillCards = (items, duplicate = false) =>
+    items.map((skill) => (
+      <div className="skill-card" key={`${duplicate ? "duplicate-" : ""}${skill.name}`}>
+        <div className="skill-icon">{skill.icon}</div>
+        <h4>{skill.name}</h4>
+        <span>{skill.level}%</span>
+        <div className="progress">
+          <div className="fill" style={{ width: `${skill.level}%` }}></div>
+        </div>
+      </div>
+    ));
+
+  const renderSkillScroller = (id, label, items) => (
+    <div className="skills-row" key={id}>
+      <div className="skills-scroller-controls">
+        <h3>{label}</h3>
+        <button
+          type="button"
+          className="skills-pause"
+          aria-pressed={pausedRows[id]}
+          aria-controls={`skills-scroller-${id}`}
+          onClick={() =>
+            setPausedRows((current) => ({ ...current, [id]: !current[id] }))
+          }
+        >
+          {pausedRows[id] ? "Resume scrolling" : "Pause scrolling"}
+        </button>
+      </div>
+      <div
+        id={`skills-scroller-${id}`}
+        className={`skills-scroller${pausedRows[id] ? " is-paused" : ""}`}
+        role="region"
+        aria-label={`${label} skills`}
+      >
+        <div className={`skills-track skills-track-${id}`}>
+          <div className="skills-group">{renderSkillCards(items)}</div>
+          <div className="skills-group" aria-hidden="true">
+            {renderSkillCards(items, true)}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const coreSkills = skills.slice(0, 9);
+  const toolsSkills = skills.slice(9);
+
   return (
     <section className="skills" id="skills">
       <div className="container">
@@ -51,29 +104,10 @@ function Skills() {
           </p>
         </div>
 
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div className="skill-card" key={index}>
-
-              <div className="skill-icon">
-                {skill.icon}
-              </div>
-
-              <h4>{skill.name}</h4>
-
-              <span>{skill.level}%</span>
-
-              <div className="progress">
-                <div
-                  className="fill"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-
-            </div>
-          ))}
+        <div className="skills-rows">
+          {renderSkillScroller("core", "Core Skills", coreSkills)}
+          {renderSkillScroller("tools", "Tools & Digital Skills", toolsSkills)}
         </div>
-
       </div>
     </section>
   );

@@ -1,6 +1,4 @@
-import React from "react";
 import "./../../public/css/about.css";
-import aboutright from "./../assets/about.png";
 
 const About = () => {
   return (
