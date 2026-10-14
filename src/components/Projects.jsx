@@ -7,6 +7,10 @@ import website04 from "./../assets/projects/website-04.png";
 import website05 from "./../assets/projects/website-05.png";
 import website06 from "./../assets/projects/website-06.png";
 import website07 from "./../assets/projects/website-07.png";
+import website08 from "./../assets/projects/website-08.png";
+import website09 from "./../assets/projects/website-09.png";
+import website10 from "./../assets/projects/website-10.png";
+import website11 from "./../assets/projects/website-11.png";
 import "./../../public/css/projects.css";
 
 const projects = [
@@ -93,6 +97,54 @@ const projects = [
       "A community-focused website with responsive layouts and clear information about the organization and its work.",
     tech: ["WordPress", "Responsive Design"],
     live: "https://nambikkai.com.my/",
+  },
+  {
+    title: "Onpack",
+    client: "Onpack",
+    category: "Business websites",
+    image: website08,
+    description:
+      "A packaging services website showcasing custom label printing and packaging solutions for Australian brands.",
+    details:
+      "A product-focused WordPress website that presents Onpack's digital, flexographic, and can printing services, along with its packaging capabilities across industries.",
+    tech: ["WordPress"],
+    live: "https://onpack.com.au/",
+  },
+  {
+    title: "CS Impex",
+    client: "CS Impex",
+    category: "Business websites",
+    image: website09,
+    description:
+      "A Malaysian grocery website showcasing Indian food products, spices, and everyday essentials.",
+    details:
+      "A business website for CS Impex, presenting its grocery products and company information for customers in Malaysia.",
+    tech: ["WordPress"],
+    live: "https://csimpex.com.my/",
+  },
+  {
+    title: "Indcham",
+    client: "Indcham",
+    category: "Business websites",
+    image: website10,
+    description:
+      "A website for Indcham, presenting the organization and its services to visitors.",
+    details:
+      "An organizational website that helps visitors explore Indcham's information and connect with the organization.",
+    tech: ["Website"],
+    live: "https://indcham.com/",
+  },
+  {
+    title: "Spectra",
+    client: "Spectra",
+    category: "Business websites",
+    image: website11,
+    description:
+      "A business website introducing Spectra's Zoho-powered solutions and services.",
+    details:
+      "A service-focused website presenting Spectra's Zoho business solutions, services, and expertise.",
+    tech: ["Website"],
+    live: "https://spectra.com.my/",
   },
 ];
 

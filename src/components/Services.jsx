@@ -118,7 +118,7 @@ const Services = () => {
     <div className="container">
       <div className="section-title">
         <h5>What I do</h5>
-        <h2>Services designed around your goals</h2>
+        <h2>Let’s Build Something Great</h2>
         <p>
           From a first business website to an established online store, find the
           right support for your next step.

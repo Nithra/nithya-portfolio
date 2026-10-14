@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #0f172a;
+  background: var(--bg);
   animation: loader-exit 350ms ease 350ms forwards;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .loader-mark span {
-  color: #8b5cf6;
+  color: var(--accent-light);
 }
 
 .loader-track {
@@ -36,7 +36,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #4f46e5, #a78bfa);
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
   transform: scaleX(0);
   transform-origin: left;
   animation: loader-progress 650ms ease 80ms forwards;

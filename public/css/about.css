@@ -1,10 +1,7 @@
 .about {
   position: relative;
-  padding: 100px 0;
-  background:
-    radial-gradient(ellipse at 8% 18%, rgba(79, 70, 229, 0.16), transparent 38%),
-    radial-gradient(ellipse at 92% 84%, rgba(139, 92, 246, 0.1), transparent 34%),
-    linear-gradient(145deg, #111a31, #10182b 55%, #111827);
+  padding: 68px 0;
+  background: var(--section-about-bg);
 }
 
 .about-container {
@@ -16,16 +13,16 @@
 
 .about-content h5 {
   margin-bottom: 14px;
-  color: #a78bfa;
-  font-size: 13px;
+  color: var(--accent-light);
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.2em;
 }
 
 .about-content h2 {
   margin-bottom: 22px;
-  color: #d8ccff;
-  background: linear-gradient(110deg, #ffffff 8%, #e4dcff 58%, #a78bfa);
+  color: var(--accent-heading);
+  background: linear-gradient(110deg, #ffffff 8%, var(--accent-heading) 58%, var(--accent-light));
   -webkit-background-clip: text;
   background-clip: text;
   font-size: clamp(30px, 4vw, 45px);
@@ -38,7 +35,7 @@
 .about-content p {
   margin-bottom: 16px;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.9;
 }
 
@@ -52,15 +49,15 @@
   padding: 24px 12px;
   border: 1px solid var(--border);
   border-radius: 9px;
-  background: rgba(30, 41, 59, 0.68);
+  background: rgba(20, 39, 40, 0.76);
   text-align: center;
   transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
 }
 
 .about-cards .card:hover {
   transform: translateY(-6px);
-  border-color: rgba(108, 99, 255, 0.55);
-  background: #1e293b;
+  border-color: rgba(var(--accent-rgb), 0.55);
+  background: var(--surface-raised);
 }
 
 .about-cards .card h3 {
@@ -73,14 +70,14 @@
 
 .about-cards .card p {
   margin-bottom: 0;
-  color: #c5cbd6;
-  font-size: 13px;
+  color: #c2d6d3;
+  font-size: 14px;
   line-height: 1.5;
 }
 
 @media (max-width: 760px) {
   .about {
-    padding: 76px 0;
+    padding: 52px 0;
   }
 
   .about-container {
